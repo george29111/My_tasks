@@ -1,0 +1,24 @@
+                              GAME CLASS
+2 teams
+Counting points
+The main receives plays from plays.txt.
+See if it is a chaser or seeker. Update the points.
+Scoring the "Quaffle" - 10 points,  "Snitch" - 150 points.
+
+                              TEAM CLASS 
+
+Every team has a "house".
+Each team has: 1 "keeper", 1 "seeker", and 3 "chasers". 
+
+                            Game Test Cases
+---------------------------------------------------------------------------
+- Simulation
+    - Test if it can find the placeholder in the plays.txt.
+    - Test if it can replace the placeholder in the plays.txt.
+    - If the placeholder is <chaser>, test if a team's score updates by QUAFFLE_POINTS.
+    - If the placeholder is <seeker>, test if a team's score updates by SNITCH_POINTS.
+
+                            Team Test Cases
+---------------------------------------------------------------------------
+- Validate Team members
+    - Test if chasers array has illegal elements.
