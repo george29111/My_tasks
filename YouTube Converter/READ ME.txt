@@ -1,0 +1,4 @@
+This YouTube converter uses yt-dlp and FFmpeg for its functionality.
+It executes specific commands via the system's command line to download MP3 or MP4 files.  
+
+The code includes licensed components and is intended for personal use only!
