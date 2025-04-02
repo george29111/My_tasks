@@ -6,7 +6,7 @@ public class Installer {
 
     public static void commandBuilder(String wingetAdress) throws IOException, InterruptedException {
         ProcessBuilder builder = new ProcessBuilder(wingetAdress , "install", "yt-dlp.yt-dlp" );
-        builder.redirectErrorStream(true); // Пренасочва stderr -> stdout, за да видим всички грешки
+        builder.redirectErrorStream(true); 
 
         Process process = builder.start();
 
@@ -21,8 +21,8 @@ public class Installer {
                 System.out.println(sc.nextLine());
             }
         }
-        int exitCode = process.waitFor(); // Изчакваме завършването на процеса
-        System.out.println("Process exited with code: " + exitCode); // Принтираме крайния резултат
+        int exitCode = process.waitFor(); 
+        System.out.println("Process exited with code: " + exitCode); 
     }
 
 
@@ -34,7 +34,7 @@ public class Installer {
             String wingetAdress = System.getProperty("user.home") + "\\AppData\\Local\\Microsoft\\WindowsApps\\winget.exe";
             commandBuilder(wingetAdress);
         } catch (Exception e) {
-            e.printStackTrace(); // Показва всички грешки, ако има такива
+            e.printStackTrace(); 
         }
 
         System.out.println("Press Enter to exit.");
