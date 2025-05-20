@@ -1,0 +1,1 @@
+Here we have a program that allows us to calculate the macros of specific foods by querying a database. The program is a beta version of the logic for a macro tracking application.
